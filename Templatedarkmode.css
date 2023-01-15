@@ -1,0 +1,821 @@
+:root {
+  --primary-color: #24262e;
+  --light-text: #afb3c0;
+  --gradient: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+}
+
+/* DEFAULTS */
+.lpc_desktop.lpc_window button:focus,
+.lpc_tablet.lpc_window button:focus {
+  outline: none !important;
+}
+
+.lpc_desktop.lpc_window_minimized {
+  bottom: 33px !important;
+}
+
+.lp-window-root h1,
+.lp-window-root h2,
+.lp-window-root h3,
+.lp-window-root h4,
+.lp-window-root h5,
+.lp-window-root h6,
+.lp-window-root p,
+.lp-window-root blockquote,
+.lp-window-root pre,
+.lp-window-root a,
+.lp-window-root abbr,
+.lp-window-root acronym,
+.lp-window-root address,
+.lp-window-root big,
+.lp-window-root cite,
+.lp-window-root code,
+.lp-window-root del,
+.lp-window-root dfn,
+.lp-window-root em,
+.lp-window-root ins,
+.lp-window-root kbd,
+.lp-window-root q,
+.lp-window-root s,
+.lp-window-root samp,
+.lp-window-root small,
+.lp-window-root strike,
+.lp-window-root strong,
+.lp-window-root sub,
+.lp-window-root sup,
+.lp-window-root tt,
+.lp-window-root var,
+.lp-window-root b,
+.lp-window-root u,
+.lp-window-root i,
+.lp-window-root center,
+.lp-window-root dl,
+.lp-window-root dt,
+.lp-window-root dd,
+.lp-window-root ol,
+.lp-window-root ul,
+.lp-window-root li,
+.lp-window-root fieldset,
+.lp-window-root form,
+.lp-window-root select,
+.lp-window-root label,
+.lp-window-root legend,
+.lp-window-root table,
+.lp-window-root caption,
+.lp-window-root tbody,
+.lp-window-root tfoot,
+.lp-window-root thead,
+.lp-window-root tr,
+.lp-window-root th,
+.lp-window-root td,
+.lp-window-root article,
+.lp-window-root aside,
+.lp-window-root canvas,
+.lp-window-root details,
+.lp-window-root embed,
+.lp-window-root figure,
+.lp-window-root figcaption,
+.lp-window-root footer,
+.lp-window-root header,
+.lp-window-root menu,
+.lp-window-root nav,
+.lp-window-root output,
+.lp-window-root ruby,
+.lp-window-root section,
+.lp-window-root summary,
+.lp-window-root span,
+.lp-window-root time,
+.lp-window-root mark,
+.lp-window-root audio,
+.lp-window-root video,
+.lp-window-root p {
+  color: var(--light-text) !important;
+}
+
+.lpc_window {
+  opacity: 1.0 !important;
+  border-radius: 0px !important;
+}
+
+.lpc_maximized-header__icon,
+.lpc_minimized-header__icon {
+  display: none !important;
+}
+
+.lpc_banner-image-area {
+  margin-bottom: 10px !important;
+}
+
+.lpc_tablet.lpc_minimized-header__text-wrapper,
+.lpc_desktop.lpc_minimized-header__text-wrapper {
+  text-align: center !important;
+  width: 100% !important;
+}
+
+.lp_header {
+  border: none !important;
+}
+
+.lpc_window_maximized {
+  box-shadow: none !important;
+  border: thin solid #ddd !important;
+}
+
+.lpc_desktop.lpc_maximized-header,
+.lpc_desktop.lpc_minimized-header {
+  height: 70px !important;
+  background-color: var(--primary-color) !important;
+  border-radius: 0px !important;
+  padding: 0px !important;
+  border-bottom: 1px solid #ddd !important;
+}
+
+.lpc_desktop.lpc_minimized-header {
+  border: thin solid #eee !important;
+}
+
+.lpc_desktop.lpc_maximized-header__text-wrapper {
+  width: 100% !important;
+  text-align: center !important;
+  line-height: 3.5 !important;
+  padding-top: 12px !important;
+}
+
+.lp_tablet.lpc_banner-image-area__image-wrapper {
+  margin: auto;
+}
+
+.lpc_maximized-header__text,
+.lpc_minimized-header__text {
+  color: var(--light-text) !important;
+  font-weight: bold !important;
+  font-family: Tele-Fet, "Arial Narrow", Arial, Helvetica, sans-serif !important;
+  font-size: 18px !important;
+  line-height: 2.7 !important;
+  margin: 0px !important;
+}
+
+.lpc_maximized-header__minimize-button,
+.lpc_minimized-header__maximize-button {
+  top: 24px !important;
+  right: 240px !important;
+  position: absolute !important;
+}
+
+.lpc_maximized-header__minimize-button {
+  transform: rotate(180deg);
+}
+
+#lpChat .lpc_maximized-header__minimize-button-asset,
+#lpChat .lpc_minimized-header__maximize-button-asset {
+  top: 0 !important;
+  left: -960px !important;
+  position: absolute !important;
+}
+
+.lpc_maximized-header__close-button,
+.lpc_minimized-header__close-button {
+  top: 24px !important;
+  right: 10px !important;
+  position: absolute !important;
+}
+
+#lpChat .lpc_maximized-header__close-button-asset,
+#lpChat .lpc_minimized-header__close-button-asset {
+  top: 0 !important;
+  left: -480px !important;
+  position: absolute !important;
+}
+
+.lpc_desktop.lpc_body {
+  top: 70px !important;
+  padding: 20px !important;
+  background-color: var(--primary-color) !important;
+}
+
+.lpc_mobile.lpc_body {
+  top: 70px !important;
+  background-color: var(--primary-color) !important;
+}
+
+.lp_tablet.lpc_body {
+  top: 70px !important;
+  padding: 20px 0 0 0 !important;
+  background-color: var(--primary-color) !important;
+}
+
+/* #lpChat [data-lp-point="maximized"] [data-lp-point="main_area"] {
+     margin-top: 35px !important;
+}
+ */
+.lpc_layout {
+  background: transparent !important;
+  margin-top: 32px !important;
+  margin-bottom: 25px !important;
+}
+
+.lp_tablet #lpChat [data-lp-cust-id="logo"],
+.lp_desktop #lpChat [data-lp-cust-id="logo"] {
+  margin-top: -20px !important;
+  margin-left: -1px !important;
+  /* height: 35px !important;
+     */
+}
+
+.lpc_tablet.lpc_banner-image-area__image-wrapper,
+.lpc_desktop.lpc_banner-image-area__image-wrapper {
+  width: 281px !important;
+  height: 34px !important;
+}
+
+.lpc_banner-image-area__link {
+  padding: 0px !important;
+  margin: 0px !important;
+  margin-left: -20px !important;
+  margin-right: -3px !important;
+}
+
+.lpc_hero-image-area {
+  display: none !important;
+}
+
+.lpc_tablet.lpc_hero-image-area__image-wrapper,
+.lpc_desktop.lpc_hero-image-area__image-wrapper {
+  margin-top: 36px !important;
+}
+
+.lpc_tablet.lpc_message-area__timestamp,
+.lpc_desktop.lpc_message-area__timestamp {
+  margin-top: 20px !important;
+  color: var(--light-text) !important;
+}
+
+/* Offset the transcript time for the agent by x amount of pixels */
+.lpc_message-area__timestamp_avatar-shown.lpc_message-area__timestamp_agent {
+  width: calc(100% - 50px) !important;
+  padding: 0 0 5px 43px !important;
+}
+
+/*#lpChat [data-lp-point="maximized"] .lp_chat_line_wrapper .lp_visitor .lp_chat_line, */
+.lpc_message {
+  border: none !important;
+}
+
+.lpc_survey-area__header {
+  padding: 8px !important;
+  overflow: hidden !important;
+}
+
+#lpChat .lp_question_wrapper {
+  padding-bottom: 0px !important;
+  margin-bottom: 18px !important;
+}
+
+.lpc_desktop.lpc_message-area__indicator {
+  padding-right: 14px !important;
+}
+
+.lpc_tablet.lpc_message-area__indicator {
+  padding-right: 10px !important;
+}
+
+.lpc_message-area__timestamp_system {
+  display: none;
+}
+
+.lpc_message-area__avatar_visitor.lpc_message-area__avatar_avatar-shown {
+  display: none;
+}
+
+.lpc_survey-area_logo {
+  margin-top: 0px;
+}
+
+#lpChat .lp_lpview_mp.lp_main_area.lp_logo_top_margin {
+  margin-top: 0px !important;
+}
+
+/* CHAT BUBBLES */
+.lp_bottom_area.lp_attachment_icon.lp_emoji_supported.lp_menu_top {
+  background: var(--primary-color) !important;
+}
+
+.lp_bottom_area.lp_attachment_icon.lp_emoji_supported.lp_menu_top {}
+
+.lpc_message_agent,
+.lpc_message_visitor {
+  border-radius: 20px !important;
+  padding: 8px 16px !important;
+  background: var(--primary-color);
+  border: none !important;
+}
+
+.lp-window-root .lp_input_area {
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+textarea.lpview_form_textarea.lpc_composer__text-area.lpc_desktop.lp_expandable_textarea {
+  color: var(--light-text) !important;
+}
+
+.lpc_message__text_visitor,
+.lpc_message__text_agent,
+#lpChat [data-lp-point="maximized"] [data-lp-asdf="lp_line_state_wrapper"] {
+  line-height: 16px !important;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif !important;
+  font-weight: bold !important;
+  font-size: 15px !important;
+}
+
+.lpc_message_agent {
+  background-image: var(--gradient) !important;
+  /* Standard syntax (must be last) */
+  border: none !important;
+  box-shadow: 7px 7px 14px #1f2027,
+    -7px -7px 14px #292c35;
+}
+
+.lpc_message-tail__border {
+  display: none !important;
+}
+
+.lpc_message-tail {
+  bottom: -5px !important;
+  height: 7px !important;
+  width: 17px !important;
+  border-color: transparent !important;
+  border: none !important;
+}
+
+.lpc_message-tail_agent.lpc_message-tail_avatar-shown {
+  left: 66px !important;
+  background-image: url(example3/bubble_tail_agent.png) !important;
+}
+
+.lpc_message-tail_agent {
+  left: 24px !important;
+  background-image: url(example3/bubble_tail_agent.png) !important;
+}
+
+.lpc_message-tail_visitor {
+  right: 13px !important;
+  background-image: url(example3/bubble_tail_visitor.png) !important;
+  bottom: -7px !important;
+}
+
+.lpc_message-area {
+  overflow: visible !important;
+  margin-bottom: 4px !important;
+}
+
+.lpc_message__text_system,
+.lpc_message-area__timestamp_system {
+  text-align: left !important;
+}
+
+.lpc_message-area_system {
+  width: 100% !important;
+}
+
+.lpc_message-area__timestamp_auto[title^="Conversation closed"] {
+  display: none !important;
+}
+
+/* UNREAD NOTIFICATION */
+.lpc_desktop.lpc_minimized-header__notification-counter {
+  background-color: #e20074 !important;
+  margin: 23px -40px 0px 15px !important;
+}
+
+/* END CONVERSATION CONFIRMATION */
+.lpc_tablet.lpc_confirmation-dialog__title,
+.lpc_desktop.lpc_confirmation-dialog__title,
+.lpc_mobile.lpc_confirmation-dialog__title {
+  font: bold 21px "Arial Narrow", Arial, Helvetica, sans-serif !important;
+  padding: 40px 7px 44px 8px !important;
+  color: var(--light-text) !important;
+}
+
+.lpc_mobile.lpc_confirmation-dialog__cancel-button,
+.lpc_mobile.lpc_survey-area__cancel-button,
+.lpc_tablet.lpc_confirmation-dialog__cancel-button,
+.lpc_tablet.lpc_survey-area__cancel-button,
+.lpc_desktop.lpc_confirmation-dialog__cancel-button,
+.lpc_desktop.lpc_survey-area__cancel-button {
+  width: 100% !important;
+  color: #e20074 !important;
+  font: bold 14px "Arial", Helvetica, sans-serif !important;
+  padding: 0 !important;
+}
+
+.lpc_mobile.lpc_confirmation-dialog__cancel-button,
+.lpc_tablet.lpc_confirmation-dialog__cancel-button,
+.lpc_desktop.lpc_confirmation-dialog__cancel-button {
+  margin-bottom: 30px !important;
+}
+
+.lpc_mobile.lpc_survey-area__cancel-button,
+.lpc_tablet.lpc_survey-area__cancel-button,
+.lpc_desktop.lpc_survey-area__cancel-button {
+  margin-bottom: 20px !important;
+}
+
+.lpc_mobile.lpc_confirmation-dialog__confirm-button .lpc_mobile.lpc_survey-area__next-button,
+.lpc_mobile.lpc_survey-area__submit-button,
+.lpc_tablet.lpc_confirmation-dialog__confirm-button,
+.lpc_tablet.lpc_survey-area__next-button,
+.lpc_tablet.lpc_survey-area__submit-button,
+.lpc_desktop.lpc_confirmation-dialog__confirm-button,
+.lpc_desktop.lpc_survey-area__next-button,
+.lpc_desktop.lpc_survey-area__submit-button {
+  width: 100% !important;
+  margin: 0 !important;
+  font: bold 18px "Arial Narrow", Arial, Helvetica, sans-serif !important;
+  background: #e10074;
+}
+
+/* IE fixes*/
+.lpc_composer {
+  background: #fff;
+}
+
+.lpc_window button:focus,
+.lpc_window input:focus,
+.lpc_window textarea:focus,
+.lpc_window select:focus,
+.lpc_window a:focus,
+.lpc_window div:focus {
+  outline: none !important;
+}
+
+.lpc_desktop.lpc_confirmation-dialog__cancel-button {
+  background: none !important;
+}
+
+/* SURVEY */
+.lpc_tablet.lpc_survey-area__question-label,
+.lpc_desktop.lpc_survey-area__question-label {
+  text-align: center !important;
+  font: bold 14px Arial, Helvetica, sans-serif !important;
+  color: var(--light-text) !important;
+}
+
+.lp_tablet.lpc_survey-area__disclaimer,
+.lp_desktop #lpChat .lp_survey_disclaimer {
+  padding: 0 10px !important;
+  color: var(--light-text) !important;
+  font: bold 12px Arial, Helvetica, sans-serif !important;
+}
+
+.lpc_tablet.lpc_survey-area__current-rating,
+.lpc_desktop.lpc_survey-area__current-rating {
+  display: none !important;
+}
+
+.lpc_tablet.lpc_survey-area__question-wrapper input,
+.lpc_tablet.lpc_survey-area__question-wrapper select,
+.lpc_desktop.lpc_survey-area__question-wrapper input,
+.lpc_desktop.lpc_survey-area__question-wrapper select {
+  background-color: var(--primary-color) !important;
+  /* border-radius: 20px !important;
+     border-color: #e20074 !important;
+     border-width: 2px !important;
+     */
+}
+
+.lpc_desktop.lpc_survey-area__question-wrapper select {
+  -webkit-padding-end: 30px !important;
+  -moz-padding-end: 30px !important;
+}
+
+/* CUSTOM CLASSES */
+.lpBanner {
+  background-image: linear-gradient(to left, #b851bb, #d12d9a, #e62b8d) !important;
+  /* box-shadow: 0px 8px 16px -8px #777 !important;
+     */
+  border: none !important;
+  text-align: center !important;
+  padding: 8px !important
+}
+
+.lpBanner a {
+  color: var(--light-text) !important;
+  text-decoration: none;
+  font: bold 12px "Arial Narrow", Arial, Helvetica, sans-serif !important;
+  cursor: pointer !important;
+}
+
+.lpPaneHeader {
+  text-align: center !important;
+  font-family: Tele-Fet, "Arial Narrow", Arial, Helvetica, sans-serif !important;
+  font-size: 24px !important;
+  font-weight: bold !important;
+}
+
+.lpPaneBody {
+  margin: 28px auto !important;
+  width: 150px !important;
+}
+
+.lpPaneButton {
+  background: #e20074 !important;
+  color: var(--light-text) !important;
+  width: 150px !important;
+  font-size: 17px !important;
+  padding: 12px !important;
+  /*margin: 28px auto !important;
+    */
+  text-align: center !important;
+}
+
+.lpPaneFooter {
+  font-size: 12px !important;
+}
+
+.LPMcontainer.LPMoverlay {
+  margin: 0 !important;
+}
+
+.lp_mobile .lpPaneFooter,
+.lp_tablet .lpPaneFooter {
+  padding: 20px !important;
+  text-align: center !important;
+}
+
+/* STRUCTURED CONTENT */
+.lpc_message_card {
+  background: unset !important;
+}
+
+.lpc_card {
+  background-color: var(--primary-color) !important;
+  border-radius: 20px !important;
+  padding-bottom: 0px !important;
+  /*border: none !important;
+    */
+  margin-bottom: 4px !important;
+}
+
+.lpc_card_vertical .lpc_card__button {
+  border-radius: 20px !important;
+  border: #e20074 solid 2px !important;
+  margin-top: 4px !important;
+}
+
+.lpc_card__button button {
+  color: #e20074 !important;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif !important;
+  font-weight: bold !important;
+  font-size: 15px !important;
+  margin-bottom: 2px !important;
+  border-radius: 20px !important;
+  padding: 6px !important;
+}
+
+.lpc_card__button.selected,
+.lpc_card__buttonbutton {
+  background-image: linear-gradient(to left, #b851bb, #d12d9a, #e62b8d) !important;
+  color: var(--light-text) !important;
+  border-radius: 20px !important;
+  border: none !important;
+}
+
+.lpc_card__image img {
+  border-radius: 20px !important;
+}
+
+.lpc_card__text {
+  border: none !important;
+}
+
+/* MOBILE */
+/*.lp_tablet #lpChat [data-lp-point="headerText"][data-lp-point="minimize"], .lp_mobile #lpChat [data-lp-point="headerText"][data-lp-point="minimize"]{
+     color: #000 !important;
+     font-weight: bold !important;
+     font-family: Tele-Fet, "Arial Narrow",Arial,Helvetica,sans-serif !important;
+     font-size: 18px !important;
+     line-height: 2.7 !important;
+     max-width: 140% !important;
+     margin: 0px !important;
+}
+*/
+.lpc_tablet.lpc_maximized-header__minimize-button,
+.lpc_mobile.lpc_maximized-header__minimize-button {
+  top: 0 !important;
+  right: 240px !important;
+  position: absolute !important;
+  margin-left: 10px !important;
+}
+
+.lpc_tablet.lpc_minimized-header__maximize-button,
+.lpc_mobile.lpc_minimized-header__maximize-button {
+  top: 60% !important;
+  right: 6px !important;
+  position: absolute !important;
+  margin: 72px 0 0 10px !important;
+}
+
+.lpc_tablet.lpc_body,
+.lpc_mobile.lpc_body {
+  max-height: calc(100% - 70px) !important;
+}
+
+.lpc_tablet.lpc_maximized-header__close-button,
+.lpc_mobile.lpc_maximized-header__close-button {
+  top: 0px !important;
+  right: 10px !important;
+  position: absolute !important;
+}
+
+.lpc_tablet.lpc_minimized-header__close-button,
+.lpc_mobile.lpc_minimized-header__close-button {
+  top: 0px !important;
+  right: 0px !important;
+  position: absolute !important;
+}
+
+.lp_tablet #lpChat [data-lp-point="maximized"] [data-lp-point="maximizedTitleContainer"],
+.lp_mobile #lpChat [data-lp-point="maximized"] [data-lp-point="maximizedTitleContainer"] {
+  padding-top: 4px !important;
+}
+
+.lpc_tablet.lpc_maximized-header,
+.lpc_mobile.lpc_maximized-header {
+  height: 70px !important;
+  background-color: var(--primary-color) !important;
+  border-radius: 0px !important;
+  padding: 0px !important;
+  border-bottom: 1px solid #ddd !important;
+}
+
+.lpc_tablet.lpc_minimized-header,
+.lpc_mobile.lpc_minimized-header {
+  /* height: 70px !important;
+     */
+  background-color: var(--primary-color) !important;
+  border-radius: 0px !important;
+  padding: 0px !important;
+  border-bottom: 1px solid #ddd !important;
+}
+
+.lpc_tablet.lpc_minimized-header__text-wrapper,
+.lpc_mobile.lpc_minimized-header__text-wrapper {
+  /* top: 58px !important;
+     height: 143px !important;
+     width: 192px !important;
+     text-align: center !important;
+     */
+  /*top: 77px !important;
+    */
+  top: 43% !important;
+  left: -53px !important;
+  height: 60px !important;
+  width: 160px !important;
+  text-align: center !important;
+}
+
+.lpc_tablet.lpc_minimized-header__notification-counter,
+.lpc_mobile.lpc_minimized-header__notification-counter {
+  background-color: #e20074 !important;
+  transform: rotate(-90deg) !important;
+  left: 0px !important;
+  top: 195px !important;
+}
+
+.lpc_maximized-header__text {
+  font-size: 18px !important;
+}
+
+.lpc_minimized-header__text {
+  font-size: 16px !important;
+}
+
+.lpc_mobile.lpc_message_agent,
+.lpc_mobile.lpc_message_visitor {
+  border-radius: 20px !important;
+  padding: 8px !important;
+}
+
+.lpc_mobile.lpc_card {
+  width: 200px !important;
+}
+
+/* fix for the rich content not expanding full width on tablets */
+.lpc_tablet.lpc_message_card {
+  width: calc(80% - 50px) !important;
+}
+
+.lpc_tablet.lpc_card {
+  max-width: 100% !important;
+  padding: 10px !important;
+}
+
+.lpc_tablet.lpc_card__text {
+  padding: 5px 10px 10px 10px;
+}
+
+/* fix for the container not taking up whole screen-height on tablets */
+.lpc_tablet.lpc_body {
+  height: 100% !important;
+}
+
+.lpc_message_agent {
+  min-width: 54px;
+}
+
+.lpc_mobile.lpc_message-tail_agent,
+.lpc_mobile.lpc_message-tail_visitor,
+.lpc_tablet.lpc_message-tail_agent,
+.lpc_tablet.lpc_message-tail_visitor {
+  bottom: -2px !important;
+  height: 7px !important;
+  width: 17px !important;
+  border-color: transparent !important;
+  border: none !important;
+}
+
+.lp_primary_messaging_cta_button {
+  position: fixed !important;
+  bottom: 65px !important;
+  right: 20px !important;
+  z-index: 1050 !important;
+  cursor: pointer;
+}
+
+.lp_primary_messaging_cta_button_mobile {
+  position: fixed !important;
+  bottom: 65px !important;
+  right: 13px !important;
+  z-index: 1050 !important;
+  cursor: pointer;
+}
+
+.lp_primary_messaging_cta_button_mobile img {
+  width: 160px !important;
+}
+
+.lp_primary_messaging_cta_button_mobile_ab {
+  position: fixed !important;
+  bottom: 49px !important;
+  right: 0 !important;
+  z-index: 1050 !important;
+  cursor: pointer;
+}
+
+.lp_primary_messaging_cta_button_mobile_ab img {
+  width: 140px !important;
+}
+
+/* social icons */
+button.lpc_desktop span {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+button:hover.lpc_desktop svg.lpc_desktop path {
+  fill: white;
+}
+
+.lp-window-root .lp_main .lp_main_area .lp_location_bottom .lp_emoji_button,
+.lp-window-root .lp_main .lp_main_area .lp_location_bottom .lp_file_button {
+  top: 13px !important;
+}
+
+span.lp_paper_plane-icon.lp_icon-dark,
+span.lp_file-icon.lp_icon-dark,
+span.lp_actions-emoji-icon.lp_icon-dark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lp-window-root .lp_main .lp_main_area .lp_location_bottom .lp_file_button {
+  top: 13px !important;
+}
+
+.lp-window-root .lp_main .lp_main_area .lp_location_bottom .lp_emoji_button {
+  top: 14px !important;
+}
+
+.lp-window-root .lp_paper_plane_button {
+  top: 7px !important;
+}
+
+/* tooltip */
+
+.lp-window-root .lp_main .lp_main_area .lp_top_menu {
+  background-color: var(--primary-color);
+  border-color: var(--light-text);
+}
+
+.lp-window-root .lp_main .lp_main_area .lp_top_menu button.lp_action_item_btn span {
+  color: var(--light-text) !important;
+}
+
+.lp-window-root .lp_main .lp_main_area .lp_top_menu button.lp_action_item_btn span svg path {
+  fill: var(--light-text);
+}
